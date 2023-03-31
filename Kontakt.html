@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="StyleKontakt.css">
+	<title>Kontakty</title>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>
+				
+                <a class="h1" href="Homepage.html">Kadeřnictví Markéta</a>
+					<a href="Homepage.html" class="home-button"><img src="Home.png"></a>
+					<div class="menu">	
+			
+						<button class="menu-btn"><img src="MenuIcon.png"></button>
+			
+						<ul class="menu-list">
+			
+						<li><a href="ONas.html">O nás</a></li>
+			  
+						<li><a href="Cenik.html">Ceník</a></li>
+			  
+						<li><a href="CoPouzivame.html">Co používáme?</a></li>
+						<li><a href="Kontakt.html">Kontakt</a></li>
+			</ul>
+		  </div>
+		</ul>
+	</nav>
+
+	<header>
+		
+		
+		
+	</header>
+	<style>
+        .container {
+            display: flex;
+            justify-content: center;
+			
+        }
+        .content {
+            width: 60%;
+			margin-top: 200px;
+        }
+        .map-container {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #map {
+            height: 500px;
+            width: 600px;
+            border: 1px solid black;
+            margin-top: 200px;
+			
+        }
+    </style>
+	
+	<div class="container">
+        <div class="content">
+            <h2 class="kontakty">Kontakty:</h2>
+            <div class="text">
+                <div class="image-container">
+                    <div>
+                        <img src="Call.png" alt="Call Icon">
+                        <p>+420 749 275 564</p>
+                    </div>
+                    <div>
+                        <img src="Mail.png" alt="Mail Icon">
+                        <p>KadernictviM@email.cz</p>
+                    </div>
+                    <div>
+                        <img src="Adresa.png" alt="Adress Icon">
+                        <p>Okrajová 168 Chýně</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </div>
+    
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 50.059040, lng: 14.226843},
+                zoom: 15
+            });
+    
+            var marker = new google.maps.Marker({
+                map: map,
+                position: {lat: 50.059040, lng: 14.226843}, 
+                title: 'Kadeřnictví Markéta'
+            });
+        }
+    </script>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgjPyQDsiRI_VIFRfWEGTwunXqAZmnIyA&callback=initMap" async defer></script>
+</body>
+<div class="Randomname">
+	<div class="image-container2">
+		<div>
+			<img src="87390.png" >
+		  <p>@KadernictviM</p>
+		</div>
+		<div>
+			<img src="59439.png" >
+		  <p>KadernictviM</p>
+		</div>
+		<div>
+			<img src="81609.png" >
+		<p>@KadernictviM</p>
+		</div>
+	  </div>
+	
+		
+		
+	
+           
+		
+<p class="cool">Tato webová stránka byla vytvořena Filipem Levicem.</p>
+
+
+</div>
+</html>
